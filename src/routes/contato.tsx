@@ -3,7 +3,7 @@ import { Navbar } from "@/components/Navbar";
 import { FooterSection } from "@/components/FooterSection";
 import { useLanguage } from "@/hooks/useLanguage";
 import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
-import repImage from "@/assets/representative.png";
+import repImage from "@/assets/representative.jpeg";
 import heroCrystal from "@/assets/crystal-tourmaline.jpg";
 
 export const Route = createFileRoute("/contato")({
