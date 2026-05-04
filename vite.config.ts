@@ -5,5 +5,12 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  plugins: [tanstackStart(), react(), tailwindcss(), tsconfigPaths()],
+  plugins: [
+    tanstackStart({
+      deploymentStrategy: "vercel",
+    }),
+    react(),
+    tailwindcss(),
+    tsconfigPaths(),
+  ],
 });
