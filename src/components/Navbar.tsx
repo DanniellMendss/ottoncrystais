@@ -143,19 +143,20 @@ export function Navbar() {
         </div>
 
         {/* Right: flags + mobile menu toggle */}
-        <div className="flex items-center gap-5">
-          <div className="hidden md:flex items-center gap-3">
+        <div className="flex items-center gap-5 md:gap-8">
+          <div className="hidden md:flex items-center gap-4">
             {languages.map((lang) => (
               <button
                 key={lang.code}
                 onClick={() => handleLanguageChange(lang.code)}
-                className={`w-6 h-6 md:w-5 md:h-5 relative overflow-hidden rounded-full transition-all duration-500 hover:scale-125 shadow-sm border border-foreground/10 ${
+                className={`w-7 h-7 md:w-5 md:h-5 relative overflow-hidden rounded-full transition-all duration-700 hover:scale-125 shadow-sm border border-foreground/10 group ${
                   language === lang.code
                     ? "opacity-100 grayscale-0 ring-2 ring-foreground/30 scale-110"
-                    : "opacity-40 grayscale hover:grayscale-0 hover:opacity-100"
+                    : "opacity-30 grayscale hover:grayscale-0 hover:opacity-100"
                 }`}
                 title={lang.code.toUpperCase()}
               >
+                <div className="absolute inset-0 bg-foreground/10 opacity-0 group-hover:opacity-20 transition-opacity duration-500" />
                 {lang.flag}
               </button>
             ))}
@@ -164,15 +165,15 @@ export function Navbar() {
           {/* Mobile toggle button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className={`md:hidden p-2 z-50 transition-colors duration-500 ${
+            className={`group relative p-2 z-50 transition-all duration-500 overflow-hidden rounded-full ${
               isTransparent ? "text-white" : "text-foreground"
-            }`}
+            } ${mobileMenuOpen ? "bg-foreground/5" : "hover:bg-foreground/5"}`}
             aria-label={mobileMenuOpen ? "Close Menu" : "Open Menu"}
           >
             {mobileMenuOpen ? (
-              <X className="w-6 h-6" strokeWidth={1.5} />
+              <X className="w-6 h-6 transition-transform duration-500 rotate-0 hover:rotate-90" strokeWidth={1} />
             ) : (
-              <Menu className="w-6 h-6" strokeWidth={1.5} />
+              <Menu className="w-6 h-6 transition-transform duration-500 hover:scale-110" strokeWidth={1} />
             )}
           </button>
         </div>
@@ -180,23 +181,28 @@ export function Navbar() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 z-[55] bg-background/95 backdrop-blur-2xl transition-all duration-1000 ease-in-out md:hidden ${
+        className={`fixed inset-0 z-[55] bg-background/98 backdrop-blur-3xl transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] md:hidden ${
           mobileMenuOpen
             ? "opacity-100 translate-y-0"
-            : "opacity-0 -translate-y-10 pointer-events-none"
+            : "opacity-0 -translate-y-full pointer-events-none"
         }`}
       >
-        <div className="flex flex-col items-center justify-center h-full gap-16 px-6 pt-32">
-          <div className="flex flex-col items-center gap-8">
-            {navLinks.map(({ to, label }) => {
+        <div className="flex flex-col items-center justify-center h-full gap-20 px-8">
+          <div className="flex flex-col items-center gap-10">
+            {navLinks.map(({ to, label }, i) => {
               const isActive = to === "/" ? currentPath === "/" : currentPath.startsWith(to);
               return (
                 <Link
                   key={to}
                   to={to}
-                  className={`text-xl font-display italic tracking-widest transition-all duration-500 ${
-                    isActive ? "text-foreground scale-110" : "text-muted-foreground"
+                  className={`text-3xl md:text-4xl font-display italic tracking-[0.15em] transition-all duration-700 hover:scale-105 active:scale-95 ${
+                    isActive ? "text-foreground opacity-100" : "text-foreground/40 hover:text-foreground/70"
                   }`}
+                  style={{ 
+                    transitionDelay: mobileMenuOpen ? `${100 * i + 300}ms` : '0ms',
+                    transform: mobileMenuOpen ? 'translateY(0)' : 'translateY(40px)',
+                    opacity: mobileMenuOpen ? 1 : 0
+                  }}
                 >
                   {label}
                 </Link>
@@ -204,22 +210,26 @@ export function Navbar() {
             })}
           </div>
 
-          <div className="w-12 h-px bg-foreground/10" />
+          <div className="w-20 h-px bg-foreground/10 transition-all duration-1000" style={{ transform: mobileMenuOpen ? 'scaleX(1)' : 'scaleX(0)', transitionDelay: '700ms' }} />
 
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-10 transition-all duration-1000" style={{ opacity: mobileMenuOpen ? 1 : 0, transform: mobileMenuOpen ? 'translateY(0)' : 'translateY(20px)', transitionDelay: '800ms' }}>
             {languages.map((lang) => (
               <button
                 key={lang.code}
                 onClick={() => handleLanguageChange(lang.code)}
-                className={`w-12 h-12 relative overflow-hidden rounded-full transition-all duration-500 shadow-xl border-2 border-foreground/5 ${
+                className={`w-14 h-14 relative overflow-hidden rounded-full transition-all duration-700 shadow-2xl border-2 border-foreground/5 ${
                   language === lang.code
-                    ? "grayscale-0 scale-125 ring-4 ring-foreground/10 shadow-foreground/10"
-                    : "grayscale opacity-40 hover:opacity-100 hover:grayscale-0"
+                    ? "grayscale-0 scale-125 ring-4 ring-foreground/10"
+                    : "grayscale opacity-30 hover:opacity-100 hover:grayscale-0"
                 }`}
               >
                 {lang.flag}
               </button>
             ))}
+          </div>
+          
+          <div className="absolute bottom-20 text-[8px] font-bold uppercase tracking-[1em] text-foreground/20 italic">
+            Otton Crystais Atelier
           </div>
         </div>
       </div>
