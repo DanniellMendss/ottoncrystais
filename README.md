@@ -28,35 +28,62 @@ O projeto foi construído com o que há de mais moderno no ecossistema web:
 
 ## 🛠️ Instalação e Execução
 
-Para rodar este projeto localmente, siga os passos abaixo:
+Para configurar o ambiente de desenvolvimento e rodar o projeto localmente, siga os passos detalhados abaixo:
 
 ### Pré-requisitos
 
-Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
+- **Node.js:** Versão 18 ou superior recomendada.
+- **Gerenciador de pacotes:** NPM (incluído no Node.js) ou Bun.
 
-### Passos
+### Passos para Configuração
 
 1. **Clone o repositório:**
    ```bash
-   git clone [url-do-repositorio]
+   git clone https://github.com/DanniellMendss/ottoncrystais.git
    ```
 
-2. **Entre no diretório do projeto:**
+2. **Acesse o diretório do projeto:**
    ```bash
    cd ottoncrystais
    ```
 
 3. **Instale as dependências:**
+   Utilize o gerenciador de sua preferência (o projeto possui `package-lock.json` e `bun.lockb`):
    ```bash
    npm install
+   # ou
+   bun install
    ```
 
 4. **Inicie o servidor de desenvolvimento:**
    ```bash
    npm run dev
+   # ou
+   bun run dev
    ```
 
-O site estará disponível em `http://localhost:3000` (ou na porta indicada no terminal).
+O site estará disponível em `http://localhost:3000` (ou na porta especificada no terminal).
+
+### 🏗️ Build e Produção
+
+Para gerar a versão otimizada de produção e visualizar o resultado final:
+
+1. **Gerar o Build:**
+   ```bash
+   npm run build
+   ```
+
+2. **Visualizar o Preview:**
+   ```bash
+   npm run preview
+   ```
+
+### ☁️ Deploy (Cloudflare)
+
+Este projeto está configurado para deploy via **Cloudflare Pages**. Para realizar o deploy manual ou via CLI:
+```bash
+npx wrangler pages deploy .output
+```
 
 ## 📁 Estrutura de Pastas
 
