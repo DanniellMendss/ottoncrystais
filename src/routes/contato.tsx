@@ -41,7 +41,6 @@ function Representantes() {
         {/* Content */}
         <div className="max-w-7xl mx-auto px-6 md:px-12 pb-32 md:pb-48 pt-20 md:pt-28">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 md:gap-32 items-start">
-
             {/* Portrait side */}
             <div className="relative aspect-[4/5] overflow-hidden border border-foreground/5 animate-afi">
               <img
@@ -72,8 +71,12 @@ function Representantes() {
                     <Mail className="w-6 h-6 text-foreground" strokeWidth={1} />
                   </div>
                   <div>
-                    <p className="text-[10px] font-bold uppercase tracking-[.4em] text-muted-foreground mb-2">E-mail</p>
-                    <p className="text-xl md:text-2xl font-display italic text-foreground">{t.representantes.email}</p>
+                    <p className="text-[10px] font-bold uppercase tracking-[.4em] text-muted-foreground mb-2">
+                      E-mail
+                    </p>
+                    <p className="text-xl md:text-2xl font-display italic text-foreground">
+                      {t.representantes.email}
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start gap-6 group">
@@ -81,8 +84,12 @@ function Representantes() {
                     <Phone className="w-6 h-6 text-foreground" strokeWidth={1} />
                   </div>
                   <div>
-                    <p className="text-[10px] font-bold uppercase tracking-[.4em] text-muted-foreground mb-2">WhatsApp</p>
-                    <p className="text-xl md:text-2xl font-display italic text-foreground">{t.representantes.phone}</p>
+                    <p className="text-[10px] font-bold uppercase tracking-[.4em] text-muted-foreground mb-2">
+                      WhatsApp
+                    </p>
+                    <p className="text-xl md:text-2xl font-display italic text-foreground">
+                      {t.representantes.phone}
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start gap-6 group">
@@ -90,8 +97,12 @@ function Representantes() {
                     <MapPin className="w-6 h-6 text-foreground" strokeWidth={1} />
                   </div>
                   <div>
-                    <p className="text-[10px] font-bold uppercase tracking-[.4em] text-muted-foreground mb-2">Location</p>
-                    <p className="text-xl md:text-2xl font-display italic text-foreground">{t.representantes.location}</p>
+                    <p className="text-[10px] font-bold uppercase tracking-[.4em] text-muted-foreground mb-2">
+                      Location
+                    </p>
+                    <p className="text-xl md:text-2xl font-display italic text-foreground">
+                      {t.representantes.location}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -103,9 +114,14 @@ function Representantes() {
                   rel="noopener noreferrer"
                   className="group relative inline-flex items-center justify-center w-full md:w-auto px-16 py-6 bg-foreground text-background text-[11px] font-bold uppercase tracking-[.6em] overflow-hidden transition-all duration-700 hover:bg-background hover:text-foreground border border-foreground"
                 >
-                  <span className="relative z-10 transition-colors duration-700">Falar com Especialista</span>
+                  <span className="relative z-10 transition-colors duration-700">
+                    Falar com Especialista
+                  </span>
                   <div className="absolute inset-0 bg-background translate-y-full group-hover:translate-y-0 transition-transform duration-700" />
-                  <ArrowRight className="absolute right-8 w-5 h-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-500 z-10" strokeWidth={1} />
+                  <ArrowRight
+                    className="absolute right-8 w-5 h-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-500 z-10"
+                    strokeWidth={1}
+                  />
                 </a>
               </div>
             </div>

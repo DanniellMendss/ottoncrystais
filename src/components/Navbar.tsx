@@ -33,46 +33,51 @@ export function Navbar() {
   const isTransparent = !scrolled && !mobileMenuOpen;
 
   const languages: { code: Language; flag: React.ReactNode }[] = [
-    { 
-      code: "pt", 
+    {
+      code: "pt",
       flag: (
         <svg viewBox="0 0 512 512" className="w-full h-full">
-          <circle cx="256" cy="256" r="256" fill="#009b3a"/>
-          <path fill="#fedf00" d="M256 50l206 206-206 206L50 256z"/>
-          <circle cx="256" cy="256" r="95" fill="#002776"/>
-          <path fill="#fff" d="M161 256c0 5 45 35 95 35s95-30 95-35-45-15-95-15-95 10-95 15z"/>
+          <circle cx="256" cy="256" r="256" fill="#009b3a" />
+          <path fill="#fedf00" d="M256 50l206 206-206 206L50 256z" />
+          <circle cx="256" cy="256" r="95" fill="#002776" />
+          <path fill="#fff" d="M161 256c0 5 45 35 95 35s95-30 95-35-45-15-95-15-95 10-95 15z" />
         </svg>
-      ) 
+      ),
     },
-    { 
-      code: "en", 
+    {
+      code: "en",
       flag: (
         <svg viewBox="0 0 512 512" className="w-full h-full">
-          <circle cx="256" cy="256" r="256" fill="#012169"/>
-          <path fill="#fff" d="M54 96l404 320M54 416l404-320M0 256h512M256 0v512" stroke="#fff" strokeWidth="60"/>
-          <path d="M54 96l404 320M54 416l404-320" stroke="#c8102e" strokeWidth="40"/>
-          <path d="M0 256h512M256 0v512" stroke="#c8102e" strokeWidth="60"/>
+          <circle cx="256" cy="256" r="256" fill="#012169" />
+          <path
+            fill="#fff"
+            d="M54 96l404 320M54 416l404-320M0 256h512M256 0v512"
+            stroke="#fff"
+            strokeWidth="60"
+          />
+          <path d="M54 96l404 320M54 416l404-320" stroke="#c8102e" strokeWidth="40" />
+          <path d="M0 256h512M256 0v512" stroke="#c8102e" strokeWidth="60" />
         </svg>
-      ) 
+      ),
     },
-    { 
-      code: "es", 
+    {
+      code: "es",
       flag: (
         <svg viewBox="0 0 512 512" className="w-full h-full">
-          <circle cx="256" cy="256" r="256" fill="#aa151b"/>
-          <path fill="#f1bf00" d="M0 128h512v256H0z"/>
+          <circle cx="256" cy="256" r="256" fill="#aa151b" />
+          <path fill="#f1bf00" d="M0 128h512v256H0z" />
         </svg>
-      ) 
+      ),
     },
-    { 
-      code: "fr", 
+    {
+      code: "fr",
       flag: (
         <svg viewBox="0 0 512 512" className="w-full h-full">
-          <circle cx="256" cy="256" r="256" fill="#fff"/>
-          <path fill="#002395" d="M0 0h170.7v512H0z"/>
-          <path fill="#ed2939" d="M341.3 0H512v512H341.3z"/>
+          <circle cx="256" cy="256" r="256" fill="#fff" />
+          <path fill="#002395" d="M0 0h170.7v512H0z" />
+          <path fill="#ed2939" d="M341.3 0H512v512H341.3z" />
         </svg>
-      ) 
+      ),
     },
   ];
 
@@ -116,8 +121,8 @@ export function Navbar() {
                       ? "text-white"
                       : "text-white/50 hover:text-white"
                     : isActive
-                    ? "text-foreground"
-                    : "text-foreground/40 hover:text-foreground"
+                      ? "text-foreground"
+                      : "text-foreground/40 hover:text-foreground"
                 }`}
               >
                 {label}
@@ -128,8 +133,8 @@ export function Navbar() {
                         ? "w-full bg-white/60"
                         : "w-0 group-hover:w-full bg-white/40"
                       : isActive
-                      ? "w-full bg-foreground/40"
-                      : "w-0 group-hover:w-full bg-foreground/20"
+                        ? "w-full bg-foreground/40"
+                        : "w-0 group-hover:w-full bg-foreground/20"
                   }`}
                 />
               </Link>
@@ -176,7 +181,9 @@ export function Navbar() {
       {/* Mobile Menu Overlay */}
       <div
         className={`fixed inset-0 z-[55] bg-background/95 backdrop-blur-2xl transition-all duration-1000 ease-in-out md:hidden ${
-          mobileMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10 pointer-events-none"
+          mobileMenuOpen
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 -translate-y-10 pointer-events-none"
         }`}
       >
         <div className="flex flex-col items-center justify-center h-full gap-16 px-6 pt-32">
@@ -205,8 +212,8 @@ export function Navbar() {
                 key={lang.code}
                 onClick={() => handleLanguageChange(lang.code)}
                 className={`w-12 h-12 relative overflow-hidden rounded-full transition-all duration-500 shadow-xl border-2 border-foreground/5 ${
-                  language === lang.code 
-                    ? "grayscale-0 scale-125 ring-4 ring-foreground/10 shadow-foreground/10" 
+                  language === lang.code
+                    ? "grayscale-0 scale-125 ring-4 ring-foreground/10 shadow-foreground/10"
                     : "grayscale opacity-40 hover:opacity-100 hover:grayscale-0"
                 }`}
               >
@@ -218,4 +225,4 @@ export function Navbar() {
       </div>
     </>
   );
-}
+}

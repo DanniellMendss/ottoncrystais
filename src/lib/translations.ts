@@ -11,11 +11,19 @@ export const translations = {
     hero: {
       tag: "Fragmentos Raros da Terra",
       title: "Arquitetura Geológica",
-      subtitle: "Curadoria exclusiva de cristais raros e peças geológicas milenares. Fragmentos únicos da Terra para colecionadores exigentes.",
+      subtitle:
+        "Curadoria exclusiva de cristais raros e peças geológicas milenares. Fragmentos únicos da Terra para colecionadores exigentes.",
       explore: "Explorar Galeria",
       curation: "Ver Catálogo",
     },
-    marquee: ["Exclusividade", "Catálogo", "Otton Crystais", "Milenar", "Fragmento Raro", "Arquitetura Geológica"],
+    marquee: [
+      "Exclusividade",
+      "Catálogo",
+      "Otton Crystais",
+      "Milenar",
+      "Fragmento Raro",
+      "Arquitetura Geológica",
+    ],
     products: {
       title: "Peças Selecionadas",
       subtitle: "Catálogo Exclusivo",
@@ -31,21 +39,24 @@ export const translations = {
     },
     catalogo: {
       title: "Catálogo de Raridades",
-      description: "Uma seleção rigorosa de formações geológicas que transcendem o tempo. Peças exclusivas para ambientes de alto padrão.",
+      description:
+        "Uma seleção rigorosa de formações geológicas que transcendem o tempo. Peças exclusivas para ambientes de alto padrão.",
     },
     sobre: {
       title: "Sobre Otton Crystais",
-      description: "A Otton Crystais nasceu da paixão pela arquitetura natural da Terra. Nossa missão é garimpar e preservar os fragmentos geológicos mais impressionantes do planeta.",
+      description:
+        "A Otton Crystais nasceu da paixão pela arquitetura natural da Terra. Nossa missão é garimpar e preservar os fragmentos geológicos mais impressionantes do planeta.",
       content: [
         "Cada cristal em nossa coleção é uma obra de arte esculpida por milhões de anos de pressão e temperatura.",
         "Trabalhamos diretamente com mineradores éticos para garantir que cada peça mantenha sua integridade e energia original.",
-        "Nossa curadoria é focada na raridade, geometria e pureza cristalina."
+        "Nossa curadoria é focada na raridade, geometria e pureza cristalina.",
       ],
     },
     representantes: {
       title: "Nossos Representantes",
       subtitle: "Contato",
-      description: "Entre em contato para uma consultoria personalizada com um de nossos especialistas.",
+      description:
+        "Entre em contato para uma consultoria personalizada com um de nossos especialistas.",
       rep_name: "Daniel Mendes",
       rep_role: "Curador e Diretor Comercial",
       email: "atelier@ottoncrystais.com",
@@ -55,13 +66,15 @@ export const translations = {
     editorial: {
       tag: "Tradição e Exclusividade",
       title: "A essência da\nnatureza em sua\nforma mais pura",
-      description: "Nossas peças são selecionadas não apenas pela beleza, mas pela história que contam e pela energia que emanam.",
+      description:
+        "Nossas peças são selecionadas não apenas pela beleza, mas pela história que contam e pela energia que emanam.",
       cta: "Conhecer História",
     },
     fabricacao: {
       tag: "Artesanato de Luxo",
       title: "Fabricação de Peças Exclusivas",
-      description: "Além da curadoria de cristais brutos, somos especialistas na lapidação e criação de objetos de design em cristal. Transformamos a arquitetura bruta da terra em peças de decoração sofisticadas e exclusivas.",
+      description:
+        "Além da curadoria de cristais brutos, somos especialistas na lapidação e criação de objetos de design em cristal. Transformamos a arquitetura bruta da terra em peças de decoração sofisticadas e exclusivas.",
       cta: "Ver Projetos",
     },
     footer: {
@@ -80,11 +93,19 @@ export const translations = {
     hero: {
       tag: "Rare Earth Fragments",
       title: "Geological Architecture",
-      subtitle: "Exclusive curation of rare crystals and millennial geological pieces. Unique Earth fragments for discerning collectors.",
+      subtitle:
+        "Exclusive curation of rare crystals and millennial geological pieces. Unique Earth fragments for discerning collectors.",
       explore: "Explore Gallery",
       curation: "View Catalog",
     },
-    marquee: ["Exclusivity", "Catalog", "Otton Crystais", "Millennial", "Rare Fragment", "Geological Architecture"],
+    marquee: [
+      "Exclusivity",
+      "Catalog",
+      "Otton Crystais",
+      "Millennial",
+      "Rare Fragment",
+      "Geological Architecture",
+    ],
     products: {
       title: "Selected Pieces",
       subtitle: "Exclusive Catalog",
@@ -100,15 +121,17 @@ export const translations = {
     },
     catalogo: {
       title: "Catalog of Rarities",
-      description: "A rigorous selection of geological formations that transcend time. Exclusive pieces for high-end environments.",
+      description:
+        "A rigorous selection of geological formations that transcend time. Exclusive pieces for high-end environments.",
     },
     sobre: {
       title: "About Otton Crystais",
-      description: "Otton Crystais was born from a passion for Earth's natural architecture. Our mission is to find and preserve the most impressive geological fragments on the planet.",
+      description:
+        "Otton Crystais was born from a passion for Earth's natural architecture. Our mission is to find and preserve the most impressive geological fragments on the planet.",
       content: [
         "Each crystal in our collection is a work of art sculpted by millions of years of pressure and temperature.",
         "We work directly with ethical miners to ensure each piece maintains its integrity and original energy.",
-        "Our curation is focused on rarity, geometry, and crystalline purity."
+        "Our curation is focused on rarity, geometry, and crystalline purity.",
       ],
     },
     representantes: {
@@ -124,13 +147,15 @@ export const translations = {
     editorial: {
       tag: "Tradition and Exclusivity",
       title: "The essence of\nnature in its\npurest form",
-      description: "Our pieces are selected not only for their beauty, but for the story they tell and the energy they emanate.",
+      description:
+        "Our pieces are selected not only for their beauty, but for the story they tell and the energy they emanate.",
       cta: "Our Story",
     },
     fabricacao: {
       tag: "Luxury Craftsmanship",
       title: "Exclusive Piece Manufacturing",
-      description: "Beyond the curation of raw crystals, we specialize in the cutting and creation of crystal design objects. We transform the earth's raw architecture into sophisticated and exclusive decor pieces.",
+      description:
+        "Beyond the curation of raw crystals, we specialize in the cutting and creation of crystal design objects. We transform the earth's raw architecture into sophisticated and exclusive decor pieces.",
       cta: "View Projects",
     },
     footer: {
@@ -149,11 +174,19 @@ export const translations = {
     hero: {
       tag: "Fragmentos Raros de la Tierra",
       title: "Arquitectura Geológica",
-      subtitle: "Curaduría exclusiva de cristales raros y piezas geológicas milenarias. Fragmentos únicos para coleccionistas exigentes.",
+      subtitle:
+        "Curaduría exclusiva de cristales raros y piezas geológicas milenarias. Fragmentos únicos para coleccionistas exigentes.",
       explore: "Explorar Galería",
       curation: "Ver Catálogo",
     },
-    marquee: ["Exclusividad", "Catálogo", "Otton Crystais", "Milenario", "Fragmento Raro", "Arquitectura Geológica"],
+    marquee: [
+      "Exclusividad",
+      "Catálogo",
+      "Otton Crystais",
+      "Milenario",
+      "Fragmento Raro",
+      "Arquitectura Geológica",
+    ],
     products: {
       title: "Piezas Seleccionadas",
       subtitle: "Catálogo Exclusivo",
@@ -169,21 +202,24 @@ export const translations = {
     },
     catalogo: {
       title: "Catálogo de Rarezas",
-      description: "Una selección rigurosa de formaciones geológicas que trascienden el tiempo. Piezas exclusivas para ambientes de alto nivel.",
+      description:
+        "Una selección rigurosa de formaciones geológicas que trascienden el tiempo. Piezas exclusivas para ambientes de alto nivel.",
     },
     sobre: {
       title: "Sobre Otton Crystais",
-      description: "Otton Crystais nació de la pasión por la arquitectura natural de la Tierra. Nuestra misión es buscar y preservar los fragmentos geológicos más impresionantes del planeta.",
+      description:
+        "Otton Crystais nació de la pasión por la arquitectura natural de la Tierra. Nuestra misión es buscar y preservar los fragmentos geológicos más impresionantes del planeta.",
       content: [
         "Cada cristal de nuestra colección es una obra de arte esculpida por millones de años de presión y temperatura.",
         "Trabajamos directamente con mineros éticos para garantizar que cada pieza mantenga su integridad y energía original.",
-        "Nuestra curaduría se centra en la rareza, la geometría y la pureza cristalina."
+        "Nuestra curaduría se centra en la rareza, la geometría y la pureza cristalina.",
       ],
     },
     representantes: {
       title: "Nuestros Representantes",
       subtitle: "Contacto",
-      description: "Póngase en contacto para una consultoría personalizada con uno de nuestros especialistas.",
+      description:
+        "Póngase en contacto para una consultoría personalizada con uno de nuestros especialistas.",
       rep_name: "Daniel Mendes",
       rep_role: "Curador y Director Comercial",
       email: "atelier@ottoncrystais.com",
@@ -193,13 +229,15 @@ export const translations = {
     editorial: {
       tag: "Tradición y Exclusividad",
       title: "La esencia de la\nnaturaleza en su\nforma más pura",
-      description: "Nuestras piezas son seleccionadas no solo por su belleza, sino por la historia que cuentan y la energía que emanan.",
+      description:
+        "Nuestras piezas son seleccionadas no solo por su belleza, sino por la historia que cuentan y la energía que emanan.",
       cta: "Conocer Historia",
     },
     fabricacao: {
       tag: "Artesanía de Lujo",
       title: "Fabricación de Piezas Exclusivas",
-      description: "Más allá de la curaduría de cristales en bruto, somos especialistas en el tallado y creación de objetos de diseño en cristal. Transformamos la arquitectura bruta de la tierra en piezas de decoración sofisticadas y exclusivas.",
+      description:
+        "Más allá de la curaduría de cristales en bruto, somos especialistas en el tallado y creación de objetos de diseño en cristal. Transformamos la arquitectura bruta de la tierra en piezas de decoración sofisticadas y exclusivas.",
       cta: "Ver Proyectos",
     },
     footer: {
@@ -218,11 +256,19 @@ export const translations = {
     hero: {
       tag: "Fragments Rares de la Terre",
       title: "Architecture Géologique",
-      subtitle: "Curation exclusive de cristaux rares et de pièces géologiques millénaires. Fragments uniques pour collectionneurs exigeants.",
+      subtitle:
+        "Curation exclusive de cristaux rares et de pièces géologiques millénaires. Fragments uniques pour collectionneurs exigeants.",
       explore: "Explorer la Galerie",
       curation: "Voir le Catalogue",
     },
-    marquee: ["Exclusivité", "Catalogue", "Otton Crystais", "Millénaire", "Fragment Rare", "Architecture Géologique"],
+    marquee: [
+      "Exclusivité",
+      "Catalogue",
+      "Otton Crystais",
+      "Millénaire",
+      "Fragment Rare",
+      "Architecture Géologique",
+    ],
     products: {
       title: "Pièces Sélectionnées",
       subtitle: "Catalogue Exclusif",
@@ -238,15 +284,17 @@ export const translations = {
     },
     catalogo: {
       title: "Catalogue de Raretés",
-      description: "Une sélection rigoureuse de formations géologiques qui transcendent le temps. Des pièces exclusives pour des environnements haut de gamme.",
+      description:
+        "Une sélection rigoureuse de formations géologiques qui transcendent le temps. Des pièces exclusives pour des environnements haut de gamme.",
     },
     sobre: {
       title: "À propos d'Otton Crystais",
-      description: "Otton Crystais est né d'une passion pour l'architecture naturelle de la Terre. Notre mission est de trouver et de préserver les fragments géologiques les plus impressionnants de la planète.",
+      description:
+        "Otton Crystais est né d'une passion pour l'architecture naturelle de la Terre. Notre mission est de trouver et de préserver les fragments géologiques les plus impressionnants de la planète.",
       content: [
         "Chaque cristal de notre collection est une œuvre d'art sculptée par des millions d'années de pression et de température.",
         "Nous travaillons directement avec des mineurs éthiques pour garantir que chaque pièce conserve son intégrité et son énergie d'origine.",
-        "Notre curation est axée sur la rareté, la géométrie et la pureté cristalline."
+        "Notre curation est axée sur la rareté, la géométrie et la pureté cristalline.",
       ],
     },
     representantes: {
@@ -262,13 +310,15 @@ export const translations = {
     editorial: {
       tag: "Tradition et Exclusivité",
       title: "L'essence de la\nnature sous sa\nforme la plus pure",
-      description: "Nos pièces sont sélectionnées non seulement pour leur beauté, mais aussi pour l'histoire qu'elles racontent et l'énergie qu'elles dégagent.",
+      description:
+        "Nos pièces sont sélectionnées non seulement pour leur beauté, mais aussi pour l'histoire qu'elles racontent et l'énergie qu'elles dégagent.",
       cta: "Notre Histoire",
     },
     fabricacao: {
       tag: "Artisanat de Luxe",
       title: "Fabrication de Pièces Exclusives",
-      description: "Au-delà de la curation de cristaux bruts, nous sommes spécialisés dans la taille et la création d'objets de design em cristal. Nous transformons l'architecture brute de la terre en pièces de décoration sophistiquées et exclusives.",
+      description:
+        "Au-delà de la curation de cristaux bruts, nous sommes spécialisés dans la taille et la création d'objets de design em cristal. Nous transformons l'architecture brute de la terre en pièces de décoration sophistiquées et exclusives.",
       cta: "Voir Projets",
     },
     footer: {

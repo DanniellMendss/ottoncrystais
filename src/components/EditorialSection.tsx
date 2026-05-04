@@ -25,7 +25,10 @@ export function EditorialSection() {
             {t.editorial.cta}
           </Link>
         </div>
-        <div className="relative aspect-[4/5] overflow-hidden animate-afu" style={{ animationDelay: "0.2s" }}>
+        <div
+          className="relative aspect-[4/5] overflow-hidden animate-afu"
+          style={{ animationDelay: "0.2s" }}
+        >
           <img
             src={heroImage}
             alt="Atelier Otton Crystais"

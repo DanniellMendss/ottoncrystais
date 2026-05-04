@@ -31,7 +31,10 @@ export function ProductGrid() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-20 lg:gap-24">
           {products.map((product, i) => (
-            <div key={product.id} className={`${i % 3 === 1 ? "lg:mt-24" : i % 3 === 2 ? "lg:mt-48" : ""}`}>
+            <div
+              key={product.id}
+              className={`${i % 3 === 1 ? "lg:mt-24" : i % 3 === 2 ? "lg:mt-48" : ""}`}
+            >
               <ProductCard {...product} delay={0.1 * i} />
             </div>
           ))}

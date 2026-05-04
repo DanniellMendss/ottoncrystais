@@ -22,7 +22,7 @@ export function FabricacaoSection() {
               {t.fabricacao.cta}
             </button>
           </div>
-          
+
           <div className="order-1 lg:order-2 relative aspect-[16/9] lg:aspect-[4/5] overflow-hidden border border-foreground/5 animate-afi">
             <img
               src={fabImage}

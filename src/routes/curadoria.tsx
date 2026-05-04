@@ -20,11 +20,7 @@ function Catalogo() {
         {/* Hero Banner */}
         <section className="relative flex items-center justify-center overflow-hidden min-h-[70vh] pt-32 md:pt-40">
           <div className="absolute inset-0">
-            <img
-              src={heroCatalog}
-              alt="Cristais Raros"
-              className="w-full h-full object-cover"
-            />
+            <img src={heroCatalog} alt="Cristais Raros" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/5" />
             <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-transparent to-transparent" />
           </div>

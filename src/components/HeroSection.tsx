@@ -21,7 +21,10 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-5xl px-6 pt-32 md:pt-40 animate-afu" style={{ animationDelay: "0.3s" }}>
+      <div
+        className="relative z-10 text-center max-w-5xl px-6 pt-32 md:pt-40 animate-afu"
+        style={{ animationDelay: "0.3s" }}
+      >
         <p className="text-[10px] md:text-xs font-bold uppercase tracking-[1em] text-white/50 mb-10">
           {t.hero.tag}
         </p>
@@ -50,7 +53,10 @@ export function HeroSection() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 animate-afu" style={{ animationDelay: "1s" }}>
+      <div
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 animate-afu"
+        style={{ animationDelay: "1s" }}
+      >
         <span className="text-[8px] font-bold uppercase tracking-[.5em] text-white/30">Scroll</span>
         <div className="w-px h-10 bg-gradient-to-b from-white/30 to-transparent" />
       </div>

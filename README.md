@@ -38,17 +38,20 @@ Para configurar o ambiente de desenvolvimento e rodar o projeto localmente, siga
 ### Passos para Configuração
 
 1. **Clone o repositório:**
+
    ```bash
    git clone https://github.com/DanniellMendss/ottoncrystais.git
    ```
 
 2. **Acesse o diretório do projeto:**
+
    ```bash
    cd ottoncrystais
    ```
 
 3. **Instale as dependências:**
    Utilize o gerenciador de sua preferência (o projeto possui `package-lock.json` e `bun.lockb`):
+
    ```bash
    npm install
    # ou
@@ -69,6 +72,7 @@ O site estará disponível em `http://localhost:3000` (ou na porta especificada 
 Para gerar a versão otimizada de produção e visualizar o resultado final:
 
 1. **Gerar o Build:**
+
    ```bash
    npm run build
    ```
@@ -81,6 +85,7 @@ Para gerar a versão otimizada de produção e visualizar o resultado final:
 ### ☁️ Deploy (Cloudflare)
 
 Este projeto está configurado para deploy via **Cloudflare Pages**. Para realizar o deploy manual ou via CLI:
+
 ```bash
 npx wrangler pages deploy .output
 ```
@@ -100,6 +105,7 @@ src/
 ## 🎨 Design System
 
 O projeto segue um guia de estilo rigoroso:
+
 - **Cores:** Tons de preto, carvão e branco pérola para contraste.
 - **Tipografia:** Uso de fontes serifadas para títulos (editorial) e sans-serif para leitura.
 - **Animações:** Transições sutis e micro-interações para uma sensação premium.

@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useLanguage } from "@/hooks/useLanguage";
 import { ArrowRight, Mail, Phone } from "lucide-react";
-import repImage from "@/assets/representative.png";
+import repImage from "@/assets/representative.jpeg";
 
 export function HomeRepresentantes() {
   const { t } = useLanguage();
@@ -43,13 +43,16 @@ export function HomeRepresentantes() {
               </div>
             </div>
 
-            <Link 
+            <Link
               to="/contato"
               className="group relative inline-flex items-center justify-center px-12 py-5 bg-foreground text-background text-[10px] font-bold uppercase tracking-[.4em] overflow-hidden transition-all duration-700 hover:bg-background hover:text-foreground border border-foreground"
             >
               <span className="relative z-10">{t.nav.representantes}</span>
               <div className="absolute inset-0 bg-background translate-y-full group-hover:translate-y-0 transition-transform duration-700"></div>
-              <ArrowRight className="absolute right-6 w-4 h-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-500 z-10" strokeWidth={1} />
+              <ArrowRight
+                className="absolute right-6 w-4 h-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-500 z-10"
+                strokeWidth={1}
+              />
             </Link>
           </div>
         </div>

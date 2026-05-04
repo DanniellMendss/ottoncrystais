@@ -1,6 +1,6 @@
 @import "tailwindcss" source(none);
 @import "tw-animate-css";
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
 @source "../src";
 
 @custom-variant dark (&:is(.dark *));
@@ -63,8 +63,8 @@
   --color-ivory: var(--ivory);
   --color-charcoal: var(--charcoal);
   --color-charcoal-deep: var(--charcoal-deep);
-  --font-display: 'Cormorant Garamond', 'Georgia', serif;
-  --font-body: 'Arial Nova Light', 'Arial Nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  --font-display: "Cormorant Garamond", "Georgia", serif;
+  --font-body: "Arial Nova Light", "Arial Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 :root {
@@ -157,13 +157,21 @@
 }
 
 @keyframes afi {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 @layer utilities {
@@ -177,4 +185,3 @@
     animation: marquee 40s linear infinite;
   }
 }
-

@@ -13,9 +13,16 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Otton Crystais" },
-      { name: "description", content: "Curadoria exclusiva de cristais raros e peças geológicas milenares. Fragmentos únicos da Terra para colecionadores exigentes." },
+      {
+        name: "description",
+        content:
+          "Curadoria exclusiva de cristais raros e peças geológicas milenares. Fragmentos únicos da Terra para colecionadores exigentes.",
+      },
       { property: "og:title", content: "Otton Crystais" },
-      { property: "og:description", content: "Curadoria exclusiva de cristais raros e peças geológicas milenares." },
+      {
+        property: "og:description",
+        content: "Curadoria exclusiva de cristais raros e peças geológicas milenares.",
+      },
     ],
   }),
 });

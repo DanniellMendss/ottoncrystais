@@ -30,9 +30,15 @@ export const Route = createRootRoute({
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Otton Crystais" },
-      { name: "description", content: "Curadoria exclusiva de cristais raros e peças geológicas milenares." },
+      {
+        name: "description",
+        content: "Curadoria exclusiva de cristais raros e peças geológicas milenares.",
+      },
       { property: "og:title", content: "Otton Crystais" },
-      { property: "og:description", content: "Curadoria exclusiva de cristais raros e peças geológicas milenares." },
+      {
+        property: "og:description",
+        content: "Curadoria exclusiva de cristais raros e peças geológicas milenares.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
